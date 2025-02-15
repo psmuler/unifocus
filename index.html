@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>サンプルグラフサイト</title>
+    <!-- Chart.jsなどを使用する場合のCDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <h1>サンプルグラフサイト</h1>
+        <p>プルダウンでデータを切り替えてグラフを表示します。</p>
+    </header>
+
+    <!-- コンテンツ (プルダウンとグラフ) -->
+    <main>
+        <section id="controls">
+            <label for="dataSelect">データセットを選択:</label>
+            <select id="dataSelect">
+                <option value="dataset1">データ1</option>
+                <option value="dataset2">データ2</option>
+                <option value="dataset3">データ3</option>
+            </select>
+        </section>
+
+        <section id="chartContainer">
+            <canvas id="myChart"></canvas>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <p>© 2025 My Single Page Site</p>
+    </footer>
+
+    <!-- スクリプト読み込み -->
+    <script src="./js/data.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
